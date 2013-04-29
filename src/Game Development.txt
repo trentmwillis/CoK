@@ -1,0 +1,69 @@
+Outline for Development:
+1. Get working display and menubar (DONE)
+
+2. Add basic functionality: generate images and allow character to move (DONE)
+	-Images that need to generate: city, buildings, player
+	-Images:
+		City = 1900px x 1080px, urban colors
+		Buildings = 100px x 100px, lots of windows and only one entrance
+		Player 20px x 20px, refer to FF4 and Chrono Trigger sprites
+	-Movement of character will be tied to a KeyListener using a KeyPressed event
+	
+3. Add in other characters (NPCs, Guards, Shopkeepers) (DONE)
+4. Add in items (DONE)
+5. Add interactivity system (DONE)
+6. Create buying/selling system (ALMOST DONE)
+7. Create functionality for "robbing" the buildings (JUST STARTED)
+8. Create save/load file system
+
+
+In this version:
+	-Added in ability to "speak" with NPCs
+	-Add in NPCs/Guards/Shopkeepers and have them walking around the map
+
+In this version:
+	-Added collision detection for player on other characters and buildings
+	-Added functionality to pause game
+
+In this version:
+	-Added interactivity with NPCs and Shopkeepers
+		-Shopkeepers display an option dialog with the options "buy", "sell" or "no thanks"
+		-NPCs display a message dialog with their pre-programmed dialog
+	-Added collision detection for NPCs so they can't walk through buildings and other characters
+
+In this version:
+	-Added in display of items in menu and a way to select them
+		-Use W and S to navigate the items
+	-Add functionality to buy/sell items
+
+In this version:
+	-Made the citizens stop moving when in menu
+	-Add randomized dialogue to NPCs, so not everyone says the same thing (need to do the same thing for the names)
+
+In this version:
+	-Added in system to change the deals a shop will offer the player based on who he trades with
+	-Can enter into/exit buildings
+
+In this version:
+	-Overhauled the collision detection system
+		-Realized the way I had been doing it was way more work than needed
+		-Now shopkeepers only appear in stores and citizens are the only ones in the city
+
+In this version:
+	-Add in way for stores to restock items
+	-Determine how to determine which store was entered
+	-Eliminate issue with talking to people next to border (Done, but kind of hacky)
+	-Added in leveling system
+	-Finished collision detection with map, used getRGB()
+	-Need to re-do buying/selling formula so you can't just profit on one item repeatedly (Done, but kind of hacky)
+	-Need to stop NPCs from being placed inside walls/buildings
+
+In this version:
+	-Add in treasure chest that you get items from
+	-Animate guards in corporation
+
+Next up:
+	-Have guards 'detect' you with their line of sight (somewhat working)
+	-Make better sprites, mainly so you can see people turn
+	-Add animated walking
+
